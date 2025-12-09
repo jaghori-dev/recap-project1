@@ -18,6 +18,17 @@ body {
     margin-bottom: 70px;
 
 }
+.profile-pic{
+    display: flex;
+    align-items: center;
+    gap: 20px;width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.profile img{
+    width: 120px;
+}
+
 .card {
     background-color: var(--card);
     border-radius: var(--radius);
@@ -50,12 +61,22 @@ ul {
     cursor: pointer;
 
 }
-
-.footer a{
+.cells {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.questions-count,
+.bookmarks-count {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100%;
-    
+    background-color: var(--card);
+    width: 200px;
+    height: 60px;
+    font-weight: bolder;
+}
+.settings{
+    height: 100px;
 }
