@@ -5,6 +5,7 @@
     box-shadow: var(--shadow);
     position: fixed;
     bottom: 0;
+    max-width: 599px;
 }
 .footer a{
     display: flex;
