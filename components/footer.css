@@ -14,7 +14,7 @@
     height: 100%;
     
 }
-.footer i {
+.footer .footer__icon {
     font-size: 35px;
     color: var(--text);
     transition: .5s;

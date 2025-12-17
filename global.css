@@ -14,16 +14,10 @@
             0 0 5px rgba(0, 0, 0, 0.8);
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-body:has(#lightmode:checked){
-  --bg: var(--light);
-  --card: var(--light);
-  --text: black;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    max-width: ;
 }

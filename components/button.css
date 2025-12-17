@@ -1,0 +1,30 @@
+.card__toggle-answer-button,
+.header__button,
+.card__theme-button{
+    background-color: var(--glass);
+    border: none;
+    border-radius: var(--radius);
+    color: var(--text);
+    font-size: large;
+    margin:auto;
+    padding: 10px;
+    min-width: 90px;
+    height: 50px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+.card__bookmark-button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 5px;
+    top: -14px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 44px;
+    color: var(--text);   
+}
+.bookmark-i {
+    color: var(--accent);
+}

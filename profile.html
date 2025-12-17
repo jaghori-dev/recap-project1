@@ -7,55 +7,60 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body data-js="root" class="">
     <header class="header">
         <h1>Quiz App</h1>
     </header>
     <main class="main">
-        <section class="profile card">
-            <div class="profile-pic">
-            <img src="user.webp" alt="">
-            <h1>Enayat Ahmadi</h1>
-            
+        <section class="card">
+            <div class="card__profile">
+                <img class="card__profile__img" src="user.webp" alt="">
+                <h1 class="card__profile__title">Enayat Ahmadi</h1>
             </div>
-            <div class="aboutme">
-                <h2>About Me</h2>
-                <p>
+            <div class="card__aboutme">
+                <h2 class="card__aboutme__title">About Me</h2>
+                <p class="card__aboutme__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius commodi dolorem quod inventore
                     eaque placeat enim recusandae aperiam id.
-                </p>
-                    
+                </p>      
             </div>
         </section>
-        <section class="cells ">
-            <div class="questions-count card">
-                <i class="fa fa-question" style="font-size: 30px;"></i>
-                <p>12</p>
+        <section class="card--counter">
+            <div class="card__count">
+                <i class="card__count-icon fa fa-question"></i>
+                <span class="card__count-number">12</span>
             </div>
-            <div class="bookmarks-count card">
-                <i class="fa fa-bookmark" style="font-size: 30px;"></i>
-                <p>4</p>
+            <div class="card__count">
+                <i class="card__count-icon fa fa-bookmark"></i>
+                <span class="card__count-number">4</span>
             </div>
-
         </section>
-        <section class="settings card">
-            <h3>Settings</h3>
-            <form action="">
-                    <label for="lightmode" class="label">Lightmode</label>
-                    <input type="checkbox" id="lightmode">
-            </form>
+        <section class="card card--settings">
+            <h3 class="card__title">Settings</h3>
+            <button class="card__theme-button" type="submit" data-js="lightmode">
+                <span>switch theme</span>
+            </button>
         </section>
-
-        
-          
     </main>
     <footer class="footer">
-        <ul class="icone">
-            <li><a href="index.html"><i class="fa fa-home" ></i></a></li>
-            <li><a href="bookmark.html"><i class="fa fa-bookmark" ></i></a></li>
-            <li><a href="profile.html"><i class="fa fa-user" style="color: var(--accent);"></i></a></li>
-        </ul>
-        
+        <ul class="footer__buttons">
+            <li class="footer__item">
+                <a class="footer__link" href="index.html">
+                    <i class="footer__icon fa fa-home" ></i>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="bookmark.html">
+                    <i class="footer__icon fa fa-bookmark" ></i>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="profile.html">
+                    <i class="footer__icon fa fa-user" ></i>
+                </a>
+            </li>
+        </ul>  
     </footer>  
+    <script src="./js/index.js" defer></script>  
 </body>
 </html>
