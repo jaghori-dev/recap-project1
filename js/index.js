@@ -15,5 +15,4 @@ const bodyElement = document.querySelector('[data-js="root"]');
 const toggleTheme = document.querySelector('[data-js="lightmode"]');
 toggleTheme.addEventListener("click", () => {
     bodyElement.classList.toggle("light")
-    console.log("hiiii")
 });
