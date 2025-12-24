@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
+    </header>
+    <main class="main">
+      <article class="card">
+        <form action="#" class="form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Add Question</legend>
+            <label
+              class="form__label form__label--question"
+              for="question-input"
+              >Enter the question</label
+            >
+            <textarea
+              class="form__input form__input--question"
+              name="question"
+              id="question-input"
+              rows="10"
+              maxlength="150"
+              placeholder="Enter the question here"
+              required
+            ></textarea>
+            <span class="form__counter" id="counter">150 characters left</span>
+            <label class="form__label form__label--answer" for="answer-input"
+              >Enter the answer</label
+            ><textarea
+              class="form__input form__input--answer"
+              name="answer"
+              id="answer-input"
+              rows="10"
+            ></textarea>
+            <span class="form__counter" id="counter">150 characters left</span>
+            <label class="form__label form__label--tag" for="tag">Tag</label>
+            <input
+              class="form__input form__input--tag"
+              type="text"
+              id="tag"
+              name="tag"
+            />
+            <button class="form__button" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
+      <ul class="footer__buttons">
+        <li class="footer__item">
+          <a class="footer__link" href="index.html" title="Home">
+            <i class="footer__icon fa fa-home"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="bookmark.html" title="Bookmarks">
+            <i class="footer__icon fa fa-bookmark"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="add.html" title="Add Question">
+            <i class="footer__icon fa fa-plus active"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="profile.html" title="Profile">
+            <i class="footer__icon fa fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
