@@ -6,14 +6,6 @@
     position: fixed;
     bottom: 0;
 }
-.footer a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100%;
-    
-}
 .footer .footer__icon {
     font-size: 35px;
     color: var(--text);
