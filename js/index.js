@@ -8,7 +8,13 @@ cards.forEach(card => {
 
   if (toggleButton && answer) {
     toggleButton.addEventListener('click', () => {
-      answer.classList.toggle('card__answer--show');
+      if (answer.className === "card__answer"){
+        answer.classList.add("visible")
+        toggleButton.textContent = "Hide Answer"
+      } else {
+        answer.classList.remove("visible")
+        toggleButton.textContent = "Show Answer"
+      }
     });
   }
   if (bookmarkButton && bookmarkIcon){
