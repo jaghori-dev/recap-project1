@@ -11,7 +11,7 @@ const answerCounter = document.querySelector("#counter-answer")
 form.addEventListener("submit", (event) =>{
     event.preventDefault()
     const question = questionInput.value
-    const answer = answerInput.value
+    const answerIn = answerInput.value
 
     const article = document.createElement("article")
     article.className = "card"
@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) =>{
 
     const pAnswer = document.createElement("p")
     pAnswer.className = 'card__answer'
-    pAnswer.textContent = answer
+    pAnswer.textContent = answerIn
 
     const uList = document.createElement("ul")
     uList.classList = "card__options"
@@ -47,18 +47,11 @@ form.addEventListener("submit", (event) =>{
 
     article.append(uList)
     article.append(pAnswer)
-    main.append(article)
 
-    // event.target.reset()
-    // event.target.elements.question.focus()
-
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-    const toggleButton = card.querySelector(".card__toggle-answer-button");
-    const answer = card.querySelector(".card__answer");
-    const bookmarkButton = card.querySelector(".card__bookmark-button")
-    const bookmarkIcon = card.querySelector(".card__bookmark-icon")
+    const toggleButton = article.querySelector(".card__toggle-answer-button");
+    const answer = article.querySelector(".card__answer");
+    const bookmarkButton = article.querySelector(".card__bookmark-button")
+    const bookmarkIcon = article.querySelector(".card__bookmark-icon")
 
     if (toggleButton && answer) {
         toggleButton.addEventListener('click', () => {
@@ -76,7 +69,10 @@ form.addEventListener("submit", (event) =>{
         bookmarkIcon.classList.toggle("active")
     })
     }
-    });
+    main.append(article)
+
+    // event.target.reset()
+    // event.target.elements.question.focus()
 
 })
 questionInput.addEventListener("input", ()=> {
